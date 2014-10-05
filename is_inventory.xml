@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+<data>
+
+  <!-- Action pour accèder aux lignes de l'inventaire pour l'importation -->
+  <record model="ir.actions.act_window" id="action_is_inventory">
+  <field name="name">action_is_inventory</field>
+  <field name="res_model">stock.inventory.line</field>
+  <field name="view_type">form</field>
+  <field name="view_mode">tree,form</field>
+  </record>
+
+  <!-- Menu pour accèder aux lignes de l'inventaire pour l'importation -->
+  <menuitem id="menu_is_inventory" sequence="10" name="Lignes des inventaires" parent="stock.menu_action_inventory_form" action="action_is_inventory" />
+
+</data>
+</openerp>
